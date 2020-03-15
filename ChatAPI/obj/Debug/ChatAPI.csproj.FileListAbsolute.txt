@@ -1,0 +1,12 @@
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\bin\Debug\ChatAPI.exe.config
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\bin\Debug\ChatAPI.exe
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\bin\Debug\ChatAPI.pdb
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\obj\Debug\ChatAPI.csprojResolveAssemblyReference.cache
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\obj\Debug\ChatAPI.Login.resources
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\obj\Debug\ChatAPI.Properties.Resources.resources
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\obj\Debug\ChatAPI.csproj.GenerateResource.Cache
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\obj\Debug\ChatAPI.csproj.CoreCompileInputs.cache
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\obj\Debug\ChatAPI.exe
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\obj\Debug\ChatAPI.pdb
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\obj\Debug\ChatAPI.ChatRoom.resources
+C:\Users\Josh\source\repos\ChatAPI\ChatAPI\obj\Debug\ChatAPI.MainPage.resources
