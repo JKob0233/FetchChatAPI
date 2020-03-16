@@ -27,7 +27,7 @@ namespace ChatAPI
         {
             if(usernameEntry.Text == null || usernameEntry.Text == "")
             {
-                MessageBox.Show("Enter a username to login");
+                MessageBox.Show("Enter a username to login", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Console.WriteLine("Enter a username to login");
             }
             else

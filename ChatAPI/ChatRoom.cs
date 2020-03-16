@@ -30,7 +30,7 @@ namespace ChatAPI
         {
             if (newMessage.Text == null | newMessage.Text == "")
             {
-                MessageBox.Show("Please enter a valid message");
+                MessageBox.Show("Please enter a valid message", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Console.WriteLine("Please enter a valid message");
             }
             else
@@ -57,32 +57,34 @@ namespace ChatAPI
 
         private void likeButton_Click(object sender, EventArgs e)
         {
-            foreach (Message m in roomMessages)
+            if(messages.SelectedItem == null)
             {
-                if (m.text == messages.SelectedItem.ToString())
-                {
-                    if (!m.likes.Contains(Login.username))
-                    {
-                        m.likes.Add(Login.username);
-                        messageLikes.Text = "Number of likes: " + m.likes.Count.ToString();
-                        usersLiked.Text = "Liked by Users: " + String.Join(", ", m.likes.ToArray());
-                    }
-                    else
-                    {
-                        MessageBox.Show("User has already liked this message.");
-                    }                    
-                }
+                MessageBox.Show("Select a message to leave a like.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else
+            {
+                foreach (Message m in roomMessages)
+                {
+                    if (m.text == messages.SelectedItem.ToString())
+                    {
+                        if (!m.likes.Contains(Login.username))
+                        {
+                            m.likes.Add(Login.username);
+                            messageLikes.Text = "Number of likes: " + m.likes.Count.ToString();
+                            usersLiked.Text = "Liked by Users: " + String.Join(", ", m.likes.ToArray());
+                        }
+                        else
+                        {
+                            MessageBox.Show("User has already liked this message.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }            
         }
 
         private void exitChat_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void ChatRoom_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

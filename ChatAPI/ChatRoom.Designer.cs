@@ -166,7 +166,6 @@
             this.Controls.Add(this.messages);
             this.Name = "ChatRoom";
             this.Text = "ChatRoom";
-            this.Load += new System.EventHandler(this.ChatRoom_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

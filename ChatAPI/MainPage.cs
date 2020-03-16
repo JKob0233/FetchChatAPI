@@ -34,12 +34,12 @@ namespace ChatAPI
         {
             if(newChatName.Text == null | newChatName.Text == "")
             {
-                MessageBox.Show("Please enter a valid name");
+                MessageBox.Show("Please enter a valid name", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Console.WriteLine("Please enter a valid name");
             }
             else if (chatRooms.Items.Contains(newChatName.Text))
             {
-                MessageBox.Show("A chat room with that name already exists");
+                MessageBox.Show("A chat room with that name already exists", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Console.WriteLine("A chat room with that name already exists");
             }
             else
@@ -52,7 +52,7 @@ namespace ChatAPI
         private void chatRooms_SelectedIndexChanged(object sender, EventArgs e)
         {
             string room = chatRooms.SelectedItem.ToString();
-            MessageBox.Show("Now entering " + room);
+            MessageBox.Show("Now entering " + room, "Entering Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ChatRoom chatroom = new ChatRoom(server, room);
             chatroom.Show();
         }
